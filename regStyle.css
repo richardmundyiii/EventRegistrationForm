@@ -1,0 +1,77 @@
+body {
+
+}
+
+.reg-card {
+    background-color: rgb(200, 200, 200);
+    border: 1px solid #A93872;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-card-header {
+    background-color: #A93872;
+
+}
+
+.reg-card-header h1 {
+    text-align: center;
+}
+
+.reg-btn {
+    background-color: #b3e9e8;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.reg-btn:hover, .reg-btn:focus {
+    background-color: aqua;
+}
+
+.events {
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 0px;
+}
+
+.events input:hover, .events input:focus {
+    background-color: #A93872;
+}
+
+input {
+    width: 99%;
+    height: 20px;
+    border: 1px solid rgb(174, 201, 244);
+    border-radius: 5px;
+    text-align: center;
+    margin: 1px 0;
+}
+input:first-child {
+    margin-top: 10px;
+}
+
+.price {
+    text-align: right;
+}
+
+input:hover, input:focus {
+    background-color: aqua;
+}
+
+@media (min-width: 900px) {
+    .reg-card {
+        display: block;
+        flex-direction: row;
+    }
+    .reg-card-header {
+        background-color: #A93872;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="regStyle.css">
+    <script src="updatePrice.js"></script>
+</head>
+<body>
+    <div class="reg-card">
+        <div class="reg-card-header">
+            <h1>Dart Tournament Registration</h1>
+        </div>
+        <div class="player-info">
+            <form class="player-input">
+                <input type="text" id="fName" placeholder="First Name" required>
+                <input type="text" id="lName" placeholder='Last Name' required><br>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Cellular Number" maxlength="10" required>
+            </form>
+            <form class="events">
+                <label for="juniors">Junior's Single 501</label><br>
+                <input type="checkbox" name="jr501" class="item" value="10" onclick="updatePrice()"><br>
+                <label for="mSingle501">Men's Single 501</label><br>
+                <input type="checkbox" name="ms501" class="item" value="15" onclick="updatePrice()"><br>
+                <label for="wSingle501">Women's Single 501</label><br>
+                <input type="checkbox" name="ws501" class="item" value="10" onclick="updatePrice()"><br>
+                <label for="juniors">Mixed Doubles 501</label><br>
+                <input type="checkbox" name="md501" class="item" value="10" onclick="updatePrice()"><br>
+                <label for="mSingle501">Blind Draw Doubles</label><br>
+                <input type="checkbox" named="blinddras" class="item" value="10" onclick="updatePrice()"><br>
+            </form>
+            <h5>Please note that the Turkey Shoot registration will be day of as we recieve your canned goods you will be given an entry slip.</h5>
+            <div class="price">
+                <p id="price">Your Total is: $0</p>
+            </div>
+            <button class="reg-btn">Register</button>
+        </div>
+    </div>
+</body>
+</html>
